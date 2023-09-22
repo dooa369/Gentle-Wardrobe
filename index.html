@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        html, body {margin: 0; padding: 0; height: 100%;
+            background-image: url(img/wrtFileImageView.jpg);
+            background-size: cover;}
+        .search-bar {width: 650px;}
+        div,img,p {position:relative}
+        div { height: 15%;top: 210px;}
+        img {top: 215px; left: 505px;}
+        p {top: 220px; left: 500px;}
+    </style>
 </head>
 <body>
-    <a href="홈페이지.html"><P>젠틀 옷장</P></a>
+    <div style="text-align: center;">
+        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
+        <span id="apm" style="color:gray; font-size: 50px;"  >ampm</span>
+    </div>
+    
+    <script win>
+        var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var AmPm ="AM";
+            if(hours > 12){   
+                var AmPm ="PM";
+                hours %= 12;
+            }
+
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+            Target_apm.innerText = `${AmPm}`;
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+
+<section action="https://www.google.com/search" method="GET">
+    <div class="mx-auto mt-5 search-bar input-group mb-3">
+      <input name="q" type="text" class="form-control rounded-pill" placeholder="Google 검색 또는 URL 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+      </div>
+    </div>
+  </section>
+    <a href="홈페이지.html">
+        <img src="img/로고1.jpg " alt="">
+    </a><br><p>젠틀 옷장</p>
 </body>
 </html>
