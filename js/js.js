@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (event) => {
 
     if (username === "한정우" && password === "1234") {
         location.reload();
-        location.href ="../로그인 된 홈페이지.html";
+        location.href ="https://dooa369.github.io/Gentle-Wardrobe/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EB%90%9C%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
