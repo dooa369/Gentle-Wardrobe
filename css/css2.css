@@ -9,7 +9,7 @@ html {
     display: grid;
     justify-items: center;
     align-items: center;
-    background: linear-gradient(#5CC9E6, #07588F);;
+    background: linear-gradient(#5CC9E6, #07588F);
   }
   
   #main-holder {
@@ -25,11 +25,44 @@ html {
     box-shadow: 0px 0px 5px 2px black;
   }
   
+  #login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #login-error-msg {
+    position: relative;
+    top: 240px;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+  
+  #error-msg-second-line {
+    display: block;
+  }
+
   #login-form {
+    position: relative;
+    top: -50px;
     align-self: flex-start;
     display: grid;
     justify-items: center;
     align-items: center;
+  }
+  
+  .login-form-field::placeholder {
+    color: #3a3a3a;
   }
   
   .login-form-field {
@@ -53,20 +86,18 @@ html {
     outline: none;
   }
 
+  h1 {
+    position: relative;
+    top: -30px;
+  }
+
   img {
     position: relative;
-    width: 50%;
-    height: 50%;
-    left: 25%;
+    width: 40%;
+    height: 40%;
+    left: 27%;
     top: -135px;
     display: grid;
     justify-items: center;
     align-items: center;
   }
-
-  @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
