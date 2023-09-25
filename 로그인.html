@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.4.1.js"></script>
-    <style>
-        a {text-decoration-line: none; color: #000;}
-    </style>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/css2.css">
+    <script defer src="js/js.js"></script>
 </head>
 <body>
     <section class="login-form">
-        <img src="img/로고1.jpg" alt="">
-        <form action="">
-            <div class="int-area">
-                <input type="text" name="id" id="id" 
-                autocomplete="off" required>
-                <label for="id">사용자 이름</label>
-            </div>
-            <div class="int-area">
-                <input type="password" name="pw" id="pw" 
-                autocomplete="off" required>
-                <label for="pw">비밀번호</label>
-            </div>
-            <div class="bhn-area">
-                <button type="submit">로그인</button>
-            </div>
+        <img src="img/2.png" alt="">
+        <main id="main-holder">
+        <h1 id="login-header">로그인</h1>
+        <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="사용자 이름">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="비밀번호">
+            <input type="submit" value="로그인" id="login-form-submit">
         </form>
         <div class="caption">
             <a href="">비밀번호를 잊으 셨나요?</a>

@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(#5CC9E6, #07588F);;
+  }
+  
+  #main-holder {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: -125px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+  }
+  
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 50px 5px 5px;
+  }
+  
+  #login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+
+  img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: -135px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  @font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
