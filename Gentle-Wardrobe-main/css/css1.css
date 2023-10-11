@@ -76,18 +76,23 @@ a {
     background-color: black;    
 }
 
-.a .b .c {
-    float: left;
-}
-
-.d .e .f {
+.goods {
     float: left;
 }
 
 .b img{
     height: 335px;
+    width: 300px;
+    margin: 0px 150px 0px 150px;
 }
 
 .c img{
     height: 335px;
+    width: 280px;
+}
+
+.e img{
+    margin: 0px 150px 0px 150px;
+    height: 300px;
+    width: 300px;
 }
